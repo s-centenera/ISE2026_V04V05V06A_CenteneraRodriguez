@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Debug\HTTP_Server.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Debug\HTTP_Server.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Fri Mar 06 12:40:03 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Fri Mar 06 13:00:35 2026
 <BR><P>
 <H3>Maximum Stack Usage =        376 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -2607,13 +2607,13 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxPostProcess
 <LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxMemoryPoolAlloc
-<LI><a href="#[22a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 <LI><a href="#[265]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IsIrqMasked
 <LI><a href="#[264]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IsException
 <LI><a href="#[216]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueNotInserted
 <LI><a href="#[214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueInsertPending
 <LI><a href="#[211]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueuePut
 <LI><a href="#[20d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueError
+<LI><a href="#[22a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
 <LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxTimerTick
@@ -2623,7 +2623,6 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = osMessageQueueGet &rArr; osRtxPostProcess &rArr; osRtxKernelErrorNotify &rArr; EvrRtxKernelErrorNotify &rArr; EventRecord2 &rArr; EventRecordItem
 </UL>
 <BR>[Calls]<UL><LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxPostProcess
-<LI><a href="#[22a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 <LI><a href="#[265]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IsIrqMasked
 <LI><a href="#[264]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IsException
 <LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MessageQueueGet
@@ -2631,6 +2630,7 @@ Global Symbols
 <LI><a href="#[21a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueRetrieved
 <LI><a href="#[217]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueGet
 <LI><a href="#[20d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueError
+<LI><a href="#[22a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ThLCD
 <LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxTimerThread
@@ -3374,14 +3374,14 @@ Global Symbols
 <P><STRONG><a name="[245]"></a>EventRecorderInitialize</STRONG> (Thumb, 228 bytes, Stack size 24 bytes, eventrecorder.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = EventRecorderInitialize &rArr; EventRecorderStart &rArr; EventRecordItem
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[2e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventRecorderTimerGetFreq
+<BR>[Calls]<UL><LI><a href="#[2e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventRecorderTimerGetFreq
 <LI><a href="#[2de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventRecorderTimerSetup
 <LI><a href="#[2df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventRecorderEnable
 <LI><a href="#[2dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventRecorderStart
 <LI><a href="#[2dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;crc16_ccitt
 <LI><a href="#[2d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventGetTS
 <LI><a href="#[2d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventRecordItem
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[239]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxKernelPreInit
 </UL>
@@ -3406,11 +3406,11 @@ Global Symbols
 <P><STRONG><a name="[187]"></a>EventRecordData</STRONG> (Thumb, 298 bytes, Stack size 40 bytes, eventrecorder.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = EventRecordData &rArr; EventRecordItem
 </UL>
-<BR>[Calls]<UL><LI><a href="#[22a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[2e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__asm___15_EventRecorder_c_e8d3082c__atomic_inc8
+<BR>[Calls]<UL><LI><a href="#[2e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__asm___15_EventRecorder_c_e8d3082c__atomic_inc8
 <LI><a href="#[2e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventCheckFilter
 <LI><a href="#[2d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventGetTS
 <LI><a href="#[2d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventRecordItem
+<LI><a href="#[22a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[186]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxKernelInfoRetrieved
 <LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netHTTPs_SetPassword
@@ -3531,45 +3531,6 @@ Global Symbols
 <LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_SetOption
 <LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netIF_GetOption
 <LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netInitialize
-<LI><a href="#[42b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_icmp6_send
-<LI><a href="#[454]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ndp_process
-<LI><a href="#[42c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ndp_send_request
-<LI><a href="#[42a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ndp_send_reply
-<LI><a href="#[428]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ndp_proc_response
-<LI><a href="#[41f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ndp_cache_add
-<LI><a href="#[40b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_server_start
-<LI><a href="#[401]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_server_run
-<LI><a href="#[3f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_proc_post
-<LI><a href="#[3f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_proc_multipart
-<LI><a href="#[3f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_open_file
-<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_listener
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nbns_listener
-<LI><a href="#[468]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_mem_shrink
-<LI><a href="#[40c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_tcp_set_option
-<LI><a href="#[409]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_tcp_send
-<LI><a href="#[403]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_tcp_listen
-<LI><a href="#[451]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_tcp_get_socket
-<LI><a href="#[407]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_tcp_get_buf
-<LI><a href="#[405]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_tcp_close
-<LI><a href="#[40a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_tcp_abort
-<LI><a href="#[477]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_set_cwnd
-<LI><a href="#[476]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_reset
-<LI><a href="#[478]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_data
-<LI><a href="#[471]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_ctrl
-<LI><a href="#[479]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_que_resend
-<LI><a href="#[473]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_proc_dupack
-<LI><a href="#[474]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_proc_acknr
-<LI><a href="#[475]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_parse_opt
-<LI><a href="#[472]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_map_socket
-<LI><a href="#[453]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ip6_send_frame
-<LI><a href="#[41e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_udp_send_if
-<LI><a href="#[46a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_udp_open
-<LI><a href="#[469]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_udp_get_socket
-<LI><a href="#[41d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_udp_get_buf
-<LI><a href="#[458]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_icmp_send_echo
-<LI><a href="#[464]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ip6_init
-<LI><a href="#[462]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ip4_init
-<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_loop_send_frame
 <LI><a href="#[223]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueDestroyed
 <LI><a href="#[222]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueDelete
 <LI><a href="#[221]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueResetDone
@@ -3653,6 +3614,45 @@ Global Symbols
 <LI><a href="#[1b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxThreadFlagsSet
 <LI><a href="#[1b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxThreadFlagsError
 <LI><a href="#[1b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxThreadGetCount
+<LI><a href="#[42b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_icmp6_send
+<LI><a href="#[454]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ndp_process
+<LI><a href="#[42c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ndp_send_request
+<LI><a href="#[42a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ndp_send_reply
+<LI><a href="#[428]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ndp_proc_response
+<LI><a href="#[41f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ndp_cache_add
+<LI><a href="#[40b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_server_start
+<LI><a href="#[401]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_server_run
+<LI><a href="#[3f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_proc_post
+<LI><a href="#[3f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_proc_multipart
+<LI><a href="#[3f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_open_file
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;http_listener
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;nbns_listener
+<LI><a href="#[468]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_mem_shrink
+<LI><a href="#[40c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_tcp_set_option
+<LI><a href="#[409]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_tcp_send
+<LI><a href="#[403]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_tcp_listen
+<LI><a href="#[451]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_tcp_get_socket
+<LI><a href="#[407]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_tcp_get_buf
+<LI><a href="#[405]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_tcp_close
+<LI><a href="#[40a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_tcp_abort
+<LI><a href="#[477]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_set_cwnd
+<LI><a href="#[476]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_reset
+<LI><a href="#[478]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_data
+<LI><a href="#[471]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_send_ctrl
+<LI><a href="#[479]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_que_resend
+<LI><a href="#[473]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_proc_dupack
+<LI><a href="#[474]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_proc_acknr
+<LI><a href="#[475]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_parse_opt
+<LI><a href="#[472]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcp_map_socket
+<LI><a href="#[453]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ip6_send_frame
+<LI><a href="#[41e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_udp_send_if
+<LI><a href="#[46a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_udp_open
+<LI><a href="#[469]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_udp_get_socket
+<LI><a href="#[41d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_udp_get_buf
+<LI><a href="#[458]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_icmp_send_echo
+<LI><a href="#[464]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ip6_init
+<LI><a href="#[462]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ip4_init
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_loop_send_frame
 <LI><a href="#[412]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ip4_send_frame
 <LI><a href="#[40f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;igmp_host_run
 <LI><a href="#[3bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;arp_send_request
@@ -3713,7 +3713,6 @@ Global Symbols
 <LI><a href="#[1dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxEventFlagsWaitNotCompleted
 <LI><a href="#[1db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxEventFlagsWaitCompleted
 <LI><a href="#[1d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxEventFlagsWait
-<LI><a href="#[434]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_mem_init
 <LI><a href="#[218]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueGetPending
 <LI><a href="#[217]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueGet
 <LI><a href="#[212]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueuePutPending
@@ -3726,6 +3725,7 @@ Global Symbols
 <LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxThreadFlagsWaitPending
 <LI><a href="#[1bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxThreadFlagsWait
 <LI><a href="#[1b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxThreadEnumerate
+<LI><a href="#[434]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_mem_init
 <LI><a href="#[3be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_mem_free
 <LI><a href="#[3c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_mem_alloc
 </UL>
@@ -5368,15 +5368,20 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[3a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
 <LI><a href="#[3a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
 </UL>
-<BR>[Called By]<UL><LI><a href="#[3b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+<BR>[Called By]<UL><LI><a href="#[30c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetSysClockFreq
+<LI><a href="#[3b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
 <LI><a href="#[3b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
-<LI><a href="#[30c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RCC_GetSysClockFreq
 </UL>
 
 <P><STRONG><a name="[22a]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[187]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventRecordData
 <LI><a href="#[166]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMessageQueueGet
 <LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osMessageQueuePut
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxMessageQueueReset
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxMessageQueueGet
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxMessageQueuePut
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxMessageQueuePostProcess
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxKernelGetInfo
 <LI><a href="#[454]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ndp_process
 <LI><a href="#[42c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ndp_send_request
 <LI><a href="#[42a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ndp_send_reply
@@ -5392,11 +5397,6 @@ Global Symbols
 <LI><a href="#[461]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ip4_frag_get
 <LI><a href="#[460]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ip4_frag_add
 <LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_loop_send_frame
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxMessageQueueReset
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxMessageQueueGet
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxMessageQueuePut
-<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxMessageQueuePostProcess
-<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcRtxKernelGetInfo
 <LI><a href="#[450]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ndp_enqueue
 <LI><a href="#[3da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ndp_cache_refresh
 <LI><a href="#[44f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_ndp_cache_find
@@ -5432,10 +5432,10 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netCGI_ProcessData
 <LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;netInitialize
 <LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC1_pins_F429ZI_config
-<LI><a href="#[403]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_tcp_listen
 <LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EventRecorderInitialize
 <LI><a href="#[2c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Control
 <LI><a href="#[2c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Initialize
+<LI><a href="#[403]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_tcp_listen
 <LI><a href="#[3c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;eth_iface_init
 <LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_udp_socket_init
 <LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;net_tcp_socket_init
@@ -7357,10 +7357,10 @@ Local Symbols
 <LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxMemoryPoolAlloc
 <LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxMemoryFree
 <LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxMemoryAlloc
-<LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 <LI><a href="#[229]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxMemoryPoolInit
 <LI><a href="#[1fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMemoryPoolCreated
 <LI><a href="#[1fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMemoryPoolError
+<LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> rtx_mempool.o(.text)
 </UL>
@@ -7507,12 +7507,12 @@ Local Symbols
 <LI><a href="#[22e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxThreadListGet
 <LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxMemoryPoolFree
 <LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxMemoryPoolAlloc
-<LI><a href="#[22a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 <LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxThreadRegPtr
 <LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MessageQueueRemove
 <LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MessageQueuePut
 <LI><a href="#[21a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueRetrieved
 <LI><a href="#[215]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueInserted
+<LI><a href="#[22a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> rtx_msgqueue.o(.text)
 </UL>
@@ -7523,10 +7523,10 @@ Local Symbols
 <LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxMemoryPoolAlloc
 <LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxMemoryFree
 <LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxMemoryAlloc
-<LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 <LI><a href="#[229]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxMemoryPoolInit
 <LI><a href="#[20f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueCreated
 <LI><a href="#[20d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueError
+<LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 <BR>[Called By]<UL><LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxMessageQueueTimerSetup
 </UL>
@@ -7547,7 +7547,6 @@ Local Symbols
 <LI><a href="#[22e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxThreadListGet
 <LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxMemoryPoolAlloc
 <LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxThreadWaitEnter
-<LI><a href="#[22a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 <LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxThreadRegPtr
 <LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MessageQueuePut
 <LI><a href="#[21a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueRetrieved
@@ -7556,6 +7555,7 @@ Local Symbols
 <LI><a href="#[213]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueuePutTimeout
 <LI><a href="#[212]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueuePutPending
 <LI><a href="#[20d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueError
+<LI><a href="#[22a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> rtx_msgqueue.o(.text)
 </UL>
@@ -7568,7 +7568,6 @@ Local Symbols
 <LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxMemoryPoolFree
 <LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxMemoryPoolAlloc
 <LI><a href="#[171]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxThreadWaitEnter
-<LI><a href="#[22a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 <LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxThreadRegPtr
 <LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MessageQueueRemove
 <LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MessageQueueGet
@@ -7579,6 +7578,7 @@ Local Symbols
 <LI><a href="#[218]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueGetPending
 <LI><a href="#[215]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueInserted
 <LI><a href="#[20d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueError
+<LI><a href="#[22a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> rtx_msgqueue.o(.text)
 </UL>
@@ -7626,7 +7626,6 @@ Local Symbols
 <LI><a href="#[232]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxThreadDispatch
 <LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxMemoryPoolFree
 <LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxMemoryPoolAlloc
-<LI><a href="#[22a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 <LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osRtxThreadRegPtr
 <LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MessageQueueRemove
 <LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MessageQueueGet
@@ -7635,6 +7634,7 @@ Local Symbols
 <LI><a href="#[21a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueRetrieved
 <LI><a href="#[215]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueInserted
 <LI><a href="#[20d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EvrRtxMessageQueueError
+<LI><a href="#[22a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> rtx_msgqueue.o(.text)
 </UL>
@@ -8526,8 +8526,8 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = SPI_Initialize &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
-<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 <LI><a href="#[2c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Enable_GPIO_Clock
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI1_Initialize
 </UL>
@@ -8538,10 +8538,10 @@ Local Symbols
 <BR>[Calls]<UL><LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_DeInit
 <LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
-<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 <LI><a href="#[2c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_DMA_Abort_IT
 <LI><a href="#[2c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_PeripheralReset
 <LI><a href="#[2c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Enable_GPIO_Clock
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI1_Control
 <LI><a href="#[2c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_PowerControl
